@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 
 /* GET home page. */
@@ -9,12 +10,12 @@ router.get('/', (req, res, next) => {
 const testJSON = [
   {
     name: 'John Smith',
-    username: 'CaptainCode'
+    username: 'CaptainCode',
   },
   {
     name: 'Jane Doe',
-    username: 'JaneyCakes'
-  }
+    username: 'JaneyCakes',
+  },
 ];
 
 router.get('/sendjson', (req, res, next) => {
