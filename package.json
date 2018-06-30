@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "test": "jest",
     "lint": "eslint .",
-    "build-dev": "webpack --config webpack.config.js --progress --profile --colors"
+    "build-dev": "webpack --config webpack.config.js --progress --profile --colors",
+    "start-w": "webpack-dev-server"
   },
   "dependencies": {
     "babel-core": "6.24.1",
@@ -42,6 +43,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
     "jest": "19.0.2",
-    "supertest": "3.0.0"
+    "react-hot-loader": "3.0.0",
+    "supertest": "3.0.0",
+    "webpack-dev-server": "2.4.5"
   }
 }

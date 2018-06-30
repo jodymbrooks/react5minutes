@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function TestComponent() {
+export default function TestComponent({ headline, count, showCount }) {
   return (
     <div>
-      <h1>React Test Component</h1>
-      something on Jody branch
+      <h1>{headline}</h1>
+      {showCount ? <p>{count}</p> : null}
     </div>
   );
 }
